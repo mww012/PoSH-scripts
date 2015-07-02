@@ -4,9 +4,9 @@ Function Send-Pushover
 {
 	param (
         [parameter(Mandatory=$true)][string]$message, # Message to be sent to client
-        [parameter(Mandatory=$false)][string]$token = '[application token]', # Application token.  Either sent by invocation or defaults to "PushPing" application
-        [parameter(Mandatory=$false)][string]$user = '[user token]', # User token.  Either sent by invocation or defaults to "mww012@gmail.com" user account on Pushover service
-        [parameter(Mandatory=$false)][string]$title # optional title used by pushover notification
+        [parameter(Mandatory=$true)][string]$token = '[application token]', # Application token.
+        [parameter(Mandatory=$true)][string]$user = '[user token]', # User token.
+        [parameter(Mandatory=$true)][string]$title # optional title used by pushover notification
         
     ) # end parameters
    
